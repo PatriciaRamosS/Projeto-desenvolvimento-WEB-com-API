@@ -1,0 +1,78 @@
+#donutsList {
+  display: contents;
+  gap: 20px; /* Espaçamento entre as colunas */
+  border-radius: 30px;
+  padding: 50px;
+}
+
+.Item {
+  text-align: center;
+}
+
+.donutsItem p {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #73ff00;
+  padding: 20px 25px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+  margin-bottom: 0px;
+}
+
+
+.donutsItem p:hover {
+  transform: scale(1.1); /* Aumenta o elemento quando o mouse passa por cima */
+  background-color: #9dff00; /* Altera a cor de fundo quando o mouse passa por cima */
+}
+
+.donutsItem p span {
+  font-weight: bold;
+}
+
+.cardDonuts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 25px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  background-color: #bff5bb;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.cardDonuts h1 {
+  margin: 0px 0px 20px 0px;
+  color: #22ff00; /* Verde principal para o texto da barra */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  -webkit-text-stroke: 0.1px #00f656;
+  text-shadow: 0.1px 0.2px 0.2px rgb(221, 255, 0); /* Sombra de texto */
+}
+
+@media (max-width: 900px) {
+  #donutsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #donutsList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardDonuts h1 {
+    font-size: 1.3rem;
+  }
+  .cardDonuts {
+    padding: 15px;
+  }
+
+  .donutsItem p {
+    font-size: 1rem;
+  }
+}

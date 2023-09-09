@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atualizar Donuts</title>
+
+  <link rel="stylesheet" href="./css/trocarDonuts.css">
+  <link rel="stylesheet" href="./css/global.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="barra">
+      <a href="/index.html">Home</a>
+      <a href="/inserirDonuts.html">Inserir</a>
+      <a href="/listarDonuts.html">Listar</a>
+      <a href="/deleteDonuts.html">Deletar</a>
+      <a href="/updateDonuts.html">Trocar</a>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="cardDonuts">
+      <h1 style="color: #000000;">Atualizar Donuts</h1>
+      <p>Alytere os dados dos Donuts que você deseja.</p>
+      <div id="donutsList"></div>
+      <div id="demo-modal" class="modal">
+        <div class="content">
+          <div id="updateFormContainer"></div>
+          <div class="footer">
+            <a href="/updateDonuts.html" class="footer-btn-close">Fechar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/api.js"></script>
+    <script src="js/updateDonuts.js"></script>
+</body>
+
+</html>

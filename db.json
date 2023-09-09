@@ -1,0 +1,22 @@
+{
+  "donuts": [
+    {
+      "sabor": "Morango",
+      "quantidade": "34234",
+      "preco": "23423",
+      "id": 2
+    },
+    {
+      "sabor": "Morango",
+      "quantidade": "54",
+      "preco": "34",
+      "id": 6
+    },
+    {
+      "sabor": "Chocolate",
+      "quantidade": "2",
+      "preco": "3",
+      "id": 7
+    }
+  ]
+}

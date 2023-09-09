@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Estilos base */
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #ffffff; /* Verde claro para o fundo */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.imagem_logo img {
+  max-width: 130%;
+  height: auto;
+  margin-left: 0;
+  margin-right: 100px;
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.imagem_logo img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.texto {
+  margin-left: 20%;
+  flex: 150%;
+  text-align: justify;
+}
+
+.texto h1{
+  font: bold;
+  font-size: 6.5rem;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 1%;
+}
+
+.texto h4{
+  font-size: 1.6rem;
+  margin-top: 5%;
+  color: #00f656;
+  -webkit-text-stroke: 0.1px #ffee00;
+}
+
+.texto p{
+  font: bold;
+  font-size: 1.2rem;
+  color: #4caf50;
+  -webkit-text-stroke: 0.1px #ffee00;
+}
+
+
+/* Aplicar gradiente, sombra e contorno aos textos */
+.texto h1{
+  -webkit-text-stroke: 0.1px #00f656;
+  color: #affd07; /* Verde principal para o texto */
+  text-shadow: 1px 1px 2px rgb(221, 255, 0); /* Sombra de texto */
+}
+
+/* Resto do seu código CSS permanece o mesmo */
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  .imagem_logo img {
+    align-items: center;
+    max-width: 80%;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto {
+    text-align: center;
+  }
+
+  .texto h1,
+  .texto h4,
+  .texto p {
+    font-size: 1.2rem; /* Tamanho do texto para telas menores */
+  }
+
+  .texto h1{
+    font-size: 2.3rem; /* Tamanho do texto para telas menores */
+  }
+}
+

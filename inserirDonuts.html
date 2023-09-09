@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inserir Donuts</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/inserirDonuts.css">
+  <link rel="stylesheet" href="./css/global.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="barra">
+      <a href="/index.html">Home</a>
+      <a href="/inserirDonuts.html">Inserir</a>
+      <a href="/listarDonuts.html">Listar</a>
+      <a href="/deleteDonuts.html">Deletar</a>
+      <a href="/updateDonuts.html">Trocar</a>
+    </div>
+  </div>
+
+
+  <div class="page">
+    <form method="POST" class="formCreate">
+      <h1>Comprar Donuts</h1>
+      <p>Insira os dados dos Donuts que você deseja.</p>
+
+      <label for="name">Sabor</label>
+      <input type="text" placeholder="Insira o sabor" id="sabor" required />
+      <label for="number">Quantidade</label>
+      <input type="number" placeholder="Insira a quantidade" autofocus="true" id="quantidade" required />
+      <label for="number">Preço</label>
+      <input type="number" placeholder="Insira o preço" id="preco" required />
+      <input style="font-size: 20px;" type="submit" value="Enviar" class="btn" />
+    </form>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/inserirDonuts.js"></script>
+</body>
+
+</html>

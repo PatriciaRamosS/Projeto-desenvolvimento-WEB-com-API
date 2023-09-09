@@ -1,0 +1,120 @@
+/* Estilos base */
+.formCreate {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4ffc5; /* Verde claro para o fundo */
+  border-radius: 30px;
+  padding: 40px;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  align-items: center; /* Centralizar elementos verticalmente */
+  margin-bottom: 100px;
+}
+
+.formCreate h1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+.formCreate p {
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.formCreate input {
+  padding: 15px;
+  font-size: 15px;
+  border: 1.5px solid #4caf50; /* Verde principal para a borda */
+  margin-bottom: 20px;
+  border-radius: 30px;
+  transition: border linear 160ms;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box; /* Certifique-se de que o tamanho total inclui preenchimento e borda */
+}
+
+.formCreate input:focus {
+  border: 1px solid #45a049; /* Verde mais escuro ao focar */
+  background-color: #abeda6; /* Altere a cor de fundo ao focar */
+}
+
+.formCreate label {
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.formCreate a {
+  font-size: 13px;
+  color: #4caf50; /* Verde principal para links */
+  transition: color linear 160ms;
+  text-align: center;
+  text-decoration: none;
+}
+
+.formCreate a:hover {
+  color: #45a049; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Estilos para o botão */
+.btn {
+  background-color: #06c31c; /* Verde principal para botões */
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  transition: transform linear 160ms, background-color linear 160ms;
+  cursor: pointer;
+  text-align: center;
+  width: 100%; /* Fazer o botão ocupar toda a largura do contêiner */
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.2); /* Sombra sutil */
+}
+
+/* Defina a animação de pulsação */
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Tamanho normal */
+  }
+  50% {
+    transform: scale(1.1); /* Tamanho aumentado */
+  }
+  100% {
+    transform: scale(1); /* Tamanho de volta ao normal */
+  }
+}
+
+/* Aplicar a animação ao botão */
+.btn {
+  animation: pulse 2s infinite; /* Pulsação contínua por 2 segundos */
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #45a049; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 500px) {
+  .formCreate {
+    padding: 20px;
+  }
+
+  .formCreate h1 {
+    font-size: 1.6em;
+  }
+
+  .formCreate p {
+    font-size: 1rem;
+  }
+
+  .formCreate input {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+}
+

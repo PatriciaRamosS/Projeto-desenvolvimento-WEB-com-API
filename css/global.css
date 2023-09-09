@@ -1,0 +1,79 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  font: bolder;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Efeito de hover para os links na barra */
+.barra a:hover {
+  color: #4caf50; /* Cor ao passar o mouse */
+  font-size: 1.7rem; /* Tamanho do texto ao passar o mouse */
+}
+
+/* Estilo padrão para os links da barra */
+.barra a {
+  text-decoration: none;
+  color: #09ff00;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Adicione o pseudo-elemento ::after para criar a linha sublinhada */
+.barra a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.barra {
+  margin-bottom: 3%;
+  color: #04d54d; /* Verde principal para o texto da barra */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  -webkit-text-stroke: 0.1px #00f656;
+  text-shadow: 0.1px 0.2px 0.2px rgb(221, 255, 0); /* Sombra de texto */
+}
+
+.barra a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+/* Efeito de sublinhado ao passar o mouse */
+.barra a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .barra {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .barra a {
+    margin: 10px 0;
+  }
+}
